@@ -3,8 +3,37 @@
     <head>
         <tile>letslearnJV2dy</tile>
     </head>
-    <body>
-        <h1>we are gonna make interactive with js</h1>
-        
+    <body> {
+    <script>
+       
+        var counter=0;
+        var num=prompt("enter a phone number xxx-xxx-xxxx format and thank u");
+        var inputt=num.split('');
+
+    
+      for (var i=0;i<inputt.length;i++)
+      { 
+     if (inputt[i]=="-"||inputt[i]=="_" ) {
+     
+        counter++;
+       
+        }
+        else if(isNaN(inputt[i])) {
+            break;
+        }
+      
+        else {
+         counter=counter+0;
+              }
+      }
+    if ((counter==2)&&(inputt.length<13)) {
+     alert("this is a valid phone number");
+    }
+    else {
+        alert("this is not a valid US phone number. Please try again");
+    }
+      
+</script>
+}
     </body>
 </html>
