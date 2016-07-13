@@ -1,0 +1,23 @@
+<!Doctype html>
+<html ng-app="hide">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+        <script src=main.js> </script>
+        <tile>Exercise2</tile>
+    </head>
+    <body ng-controller='list'>
+        <!--<form >-->
+        <!-- <br>Name<input type="text" ng-model="firstname" ><br>-->
+        <!-- <br>Bio<input type="text" ng-model="bio"<br>-->
+        <!-- <br>favourite books<input type="text" ng-model="favbooks"><br>-->
+        <!-- <br>fav javascript libraries<input type="text" lib="fav js library" ng-model="lib"><br>-->
+        <!-- <br><inp````````````````````````````ut type="submit" ng-model="name,bio,lib"><br>-->
+        
+        <!--</form>-->
+        <h1>Shopping list</h1>
+        <form ng-submit="addItem()">
+        <input type="text" placeholder="item to add" ng-model="itemToAdd"/>
+        <input type="submit" value="add"/>
+        </form>
+    </body>
+</html>
